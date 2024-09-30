@@ -1,0 +1,250 @@
+.footer {
+  text-align: center;
+  font-size:90%;
+}
+
+.error {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.login {
+  font-style: italic;
+}
+
+
+
+td.label {
+  font-weight: bold;
+}
+
+img.profile {
+  vertical-align: top;
+}
+
+/* used */
+body {
+  font:14px arial;
+
+     margin-top: 0;
+     margin-bottom: 0;
+	--background-color: #444;
+    background-image:    url(Bookshelf.jpg);
+    background-size:     cover;                     /* <------ */
+    background-repeat:   no-repeat;
+            /* optional, center the image */
+}
+
+h1{
+	    font-family: arial;
+		type:bold;
+		text-align:center;
+}
+
+
+}
+/*
+#leftmargin {
+     width: 200px;
+     margin: 0 auto;
+     padding: 0;
+     overflow: auto;
+}
+
+#leftcolumn {
+     width: 1000px;
+     padding: 0;
+     margin: 0;
+     display: block;
+    -- border: 1px solid white;
+     position: fixed;
+}
+#rightmargin {
+     width: 1005px;
+     margin: 0 auto;
+     padding: 0;
+     overflow: auto;
+}
+#rightcolumn {
+     width: 750px;
+     background-color: #777;
+     display: block;
+     float: left;
+     border: 1px solid white;
+}
+*/
+#wrapper {
+    width: 1400px;
+    margin: 0 auto;
+    --position: relative;
+}
+#leftcolumn, #rightcolumn {
+    --border: 1px solid white;
+    min-height: 750px;
+	min-width: 450px;
+    --color: white;
+	float: left;
+}
+#leftcolumn {
+    min-width: 450px;
+    --background-color: #111;
+    min-height: 100px;
+    --position: fixed;
+}
+#rightcolumn {
+    min-width: 450px;
+	min-height: 100px;
+    --background-color: #777;
+    --float: left;
+}
+
+
+div.field {
+  margin-bottom:5px;
+  text-align:left;
+}
+span.help {
+  color:#ff0000;
+  font-style:italic;
+  background-color: yellow;
+}
+
+/* used */
+	div.heading {
+    background-image:url("header.gif");
+	background-repeat:repeat;
+	    margin:0;
+    padding:20px;
+	   width:100%;
+    height:100%;
+	    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+	 margin-bottom:25px;
+}
+
+/* used */
+	div.footer {
+	/* background-image: url("footer.gif"); */
+	background-repeat: repeat;
+	margin: 0;
+    padding: 5px;
+	   width: 100%;
+    height: 100%;
+	    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+	color: white;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+}
+
+li {
+    float: left;
+	margin-left: 400px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000;
+	
+}
+
+label {
+
+  text-align:center;
+  color: #ffffff;
+  background-color:#000000;
+  }
+
+
+	/* used */
+input[type=text], input[type=password], select {
+    
+    padding: 5px ;
+    margin-left:25px;
+	margin-top:25px;
+	 margin-right:25px;
+	 margin-bottom:25px;
+    display: inline-block;
+	
+	padding: 5px ;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background-color: #dce1ff;
+}
+
+	/* used */
+input[type=submit] {
+    width:50px;
+    background-color: #0092ef;
+    color: white;
+	margin-left:5px;
+	margin-top:25px;
+    padding: 5px ;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+	/* used */
+input[type=submit]:hover {
+    background-color: #64af64;
+}
+div.login{
+	padding: 100px;
+	    margin: 0x 250px 250 px 0px;
+		font-style: italic; 
+}
+
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+			text-align:center;
+    text-decoration: none;
+    color: initial;
+	
+	width: 15%;
+    background-color: #0092ef;
+    color: white;
+    padding: 14px ;
+    margin: 15px 15px;
+    border: none; /*notworking  may be cause it's not actual button*/
+    border-radius: 6px;/*notworking  may be cause it's not actual button*/
+    cursor: pointer;
+}
+
+a.button:hover {
+    background-color: #64af64;
+}
+
+a.button:active {
+    background-color: #444444;
+	}
+	
+	/* used */
+		div.search {
+	min-height:500px;
+	background-repeat:repeat;
+
+	    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
