@@ -1,0 +1,116 @@
+<?php
+  // Start the session if cookie var available assign them to session var
+  require_once('startsession.php');
+
+  // Set Title for the Page
+  $page_title = 'Blood Depot Status Change!';
+  ?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web Based Blood Management System -<?php echo $page_title?> </title>
+   <link rel="stylesheet" type="text/css" href="main.css" />
+   <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+  
+<?php  
+  require_once('heading.php');
+  
+  //require_once('appvars.php');
+  require_once('db_con_vars.php');
+
+  // Show the navigation menu
+  require_once('navmenu.php');
+  
+  // Show body common content
+  require_once('body.php');
+  
+      if (!empty($_GET['bd_id'])) {
+		$bd_id =  $_GET['bd_id'];
+		$status =  $_GET['status'];
+	  
+
+	   switch ($status) {
+    case 'P':
+      $status = "NEW USER";
+      break;
+    // Descending by job title
+    case 'A':
+      $status = "ACTIVE";
+      break;
+    // Ascending by state
+    case 'B':
+      $status = "BLOCKED";
+      break;
+    default:
+	$status = "N/A";
+    }
+	
+	  }
+?>
+
+
+<div class="leftonly" style="padding-top:6%; width:75%">
+	
+	<form name="activateform" action="bd_activate.php" method="POST" onsubmit="return confirm('Do you want to Register the Blood Depot?');">
+		
+      <div class="left">
+        <label for="BD_ID">Blood Depot ID:</label>
+        <input id="disabled" name="BD_ID" type="text" size="12" 
+		value="<?php if (!empty($bd_id)) echo $bd_id; ?>"  disabled="true" />
+		<br/>
+		<br/>
+		
+		<label for="STATUS">Status:</label>
+        <input id="disabled" name="Status" type="text" size="12" 
+		value="<?php if (!empty($status)) echo $status; ?>"  disabled="true" />
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+				
+		
+		
+
+		<!--disabled tag fields not getting submitted on form submission, so hidden tag is used -->
+        <input id="BLOOD_DEPOT_ACTIVATE" name="BLOOD_DEPOT_ACTIVATE" type="hidden"
+		value="<?php if (!empty($bd_id)) echo $bd_id; ?>" />
+	  </div>
+		
+		<input type="submit" class="sumbit" value="ACTIVATE" name="submit" />
+			
+	 </form>
+		
+		
+	<?php if($status!='P'){ ?>
+	<form name="blockform" action="bd_block.php" method="POST" onsubmit="return confirm('Do you want to Block the Blood Depot?');">
+	  <div class="left">
+		<!--disabled tag fields not getting submitted on form submission, so hidden tag is used -->
+        <input id="BLOOD_DEPOT_BLOCK" name="BLOOD_DEPOT_BLOCK" type="hidden"
+		value="<?php if (!empty($bd_id)) echo $bd_id; ?>" />
+		</div>
+		
+	  <input type="submit" class="sumbit" value="BLOCK" name="submit" />
+		
+	</form>
+	
+	<?php } ?>
+	<div>
+		<a href='bd_status_update.php'><img id='button_right' src='/blood_management/admin/images/back.png' alt='BACK'/></a>
+	</div>
+	
+</div>		  
+<?php
+
+  // Insert the page footer
+  require_once('footer.php');
+  	if (!empty($err_msg)) {
+			echo '<script language="javascript">';
+			echo 'alert("'.$err_msg.'")';
+			echo '</script>';
+	}
+?>
