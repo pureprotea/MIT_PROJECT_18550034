@@ -1,0 +1,381 @@
+body {
+  font:14px arial;
+     margin-top: 0;
+     margin-bottom: 0;
+	--background-color: #444;
+	
+}
+h1{
+	    font-family: "Times New Roman", Times, serif;
+		  text-align:center;
+		type:bold;
+}
+
+
+
+span.help {
+  color:#ff0000;
+  font-style:italic;
+  background-color: #FFEEEE;
+}
+
+
+.footer {
+  text-align: center;
+  font-size:90%;
+}
+
+p{
+	  text-align: center;
+	
+}
+strong{
+	  text-align: center;
+	
+}
+p.sucess{
+font-weight: bold;
+  color: #228B22;
+	
+}
+p.error {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+td.label {
+  font-weight: bold;
+}
+
+img.profile {
+  vertical-align: top;
+}
+
+
+
+form label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+fieldset { 
+    display: block;
+    margin-left: 300px;
+    margin-right:300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 15px groove ;
+}
+
+
+legend {
+  padding: 0.2em 0.5em;
+  border:5px solid green;
+  color:black;
+  font-size:200%;
+  text-align:center;
+  }
+
+
+div.heading {
+    background-image:url("heading.gif");
+	background-repeat:repeat;
+	opacity: 0.8
+	margin:0;
+    padding:20px;
+	width:100%;
+    height:100%;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+	div.body {
+    background-image: url("body.gif");
+    height: 515px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+div.report_body {
+    height: 515px;
+}
+
+div.field {
+  margin-bottom:5px;
+  
+}
+div.button {
+  margin-bottom:5px;
+}
+
+
+div.leftonly{
+	margin:auto;
+	padding:20%
+	float: left;
+	width:95%;
+    height:100%;
+	
+}
+	div.left {
+    float: left;
+	width:50%;
+    height:100%;
+}
+	div.right {
+    float: right;
+	width:50%;
+    height:100%;
+}
+
+	div.left_1 {
+    float: left;
+	width:60%;
+    height:100%;
+}
+	div.right_1 {
+    float: right;
+	width:40%;
+    height:100%;
+}
+	div.center {
+		margin: auto;
+		width:60%;
+    height:100%;
+	text-align:center;
+}
+	div.r_corner {
+		float: right;
+		margin: auto;
+		width:0%;
+		height:0%;
+		text-align:center;
+}
+
+div.search {
+        text-align:center;
+        
+}
+.search input[type="submit"] {
+    border: none;
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    display: inline-block; /* Make it inline */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    width: 500px; /* Adjust width as needed */
+        margin-bottom: 20px;
+}
+.search input[type="submit"]:first-of-type {
+    margin-top: 25px; /* Add small height gap before the first button */
+}
+	div.footer {
+   background-image: url("footer.jpg");
+	/* background-image: url("e.gif"); */
+	background-repeat: repeat;
+	margin: 0;
+    padding: 5px;
+	width: 100%;
+    height: 100%;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+	float: left;
+}
+
+div.login{
+	padding: 100px;
+	    margin: 0px 250px 250 px 0px;
+		font-style: italic; 
+		  text-align:center;
+}
+
+DIV.debug{
+	    color:#008000;
+		margin: 5px 5px 5px 5px;
+		font-weight: bold;
+		font-style: italic; 
+		text-align:left;
+	
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+}
+
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000;
+	
+}
+
+
+input[type=text], input[type=password], select {
+    width: 50%;
+    padding: 5px ;
+    margin: 0px 0;
+    display: inline-block;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+	   background-color: #dce1ff;
+}
+input[type=date],input[type=file] {
+    width: 50%;
+    padding: 5px ;
+    margin: 0px 0;
+    display: inline-block;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+	   background-color: #dce1ff;
+}
+input[type=text]#disabled,select#disabled{
+	background-color: #d3d3d3;
+}
+
+input[type=text]#red,select#red{
+	background-color: #FA8072;
+}
+input[type=text]#green,select#green{
+	background-color: #90EE90;
+}
+	
+input[type=submit] {
+    width: 20%;
+    background-color: #0092ef;
+    color: white;
+    padding: 14px ;
+    margin: 15px 125px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+	min-height: 50px;
+	min-width: 150px;
+}
+
+input[type=submit]:hover {
+    background-color: #64af64;
+}
+
+#nav_icon_left, #nav_icon_right{
+	width:46.5px; 
+	background-color:#444444; 
+	padding-left:30px; 
+	padding-right:30px;
+}
+#nav_icon_left{
+	float:left; 
+}
+
+#nav_icon_right{
+	float:right; 
+}
+
+#nav_icon_left:hover, #nav_icon_right:hover {
+		background-color:#000000; 
+}
+
+#button_right{
+	float:right;
+	width:46.5px; 
+	padding-left:30px; 
+	padding-right:30px;
+}
+#button_left{
+	float:left;
+	width:46.5px; 
+	padding-left:30px; 
+	padding-right:30px;
+}
+#button_report{
+	width:25px; 
+	padding-left:5px; 
+	padding-right:5px;
+	padding-top:5px;
+}
+/*
+#leftmargin {
+     width: 200px;
+     margin: 0 auto;
+     padding: 0;
+     overflow: auto;
+}
+
+#leftcolumn {
+     width: 1000px;
+     padding: 0;
+     margin: 0;
+     display: block;
+    -- border: 1px solid white;
+     position: fixed;
+}
+#rightmargin {
+     width: 1005px;
+     margin: 0 auto;
+     padding: 0;
+     overflow: auto;
+}
+#rightcolumn {
+     width: 750px;
+     background-color: #777;
+     display: block;
+     float: left;
+     border: 1px solid white;
+}
+*/
+#wrapper {
+    width: 1400px;
+    margin: 0 auto;
+    --position: relative;
+}
+#leftcolumn, #rightcolumn {
+    --border: 1px solid white;
+    min-height: 750px;
+	min-width: 450px;
+    --color: white;
+	float: left;
+}
+#leftcolumn {
+    min-width: 450px;
+    --background-color: #111;
+    min-height: 100px;
+    --position: fixed;
+}
+#rightcolumn {
+    min-width: 450px;
+	min-height: 100px;
+    --background-color: #777;
+    --float: left;
+}
